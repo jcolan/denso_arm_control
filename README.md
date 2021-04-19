@@ -66,7 +66,7 @@ The node denso_arm_planner allows you to modify the maximum join velocity and ma
 ```
 rosrun rqt_reconfigure rqt_reconfigure
 ```
-![alt text](https://github.com/jcolan/denso_arm_control/blob/main/denso_arm_control/doc/figures/simulation.png "CoppeliaSim simulation")
+![alt text](https://github.com/jcolan/denso_arm_control/blob/main/denso_arm_control/doc/figures/rqt_reconfigure.png "CoppeliaSim simulation")
 
 The slider varies from 1% to 100%.
 
@@ -77,7 +77,7 @@ The package includes a simulation environment of the VS050 implemented with [Cop
  ./sim/vs050.ttt
 ```
 
-![alt text](https://github.com/jcolan/denso_arm_control/blob/main/denso_arm_control/doc/figures/rqt_reconfigure.png "Dynamic reconfigure")
+![alt text](https://github.com/jcolan/denso_arm_control/blob/main/denso_arm_control/doc/figures/simulation.png "Dynamic reconfigure")
 
 The simulation model contains the the following ROS topics for communication with denso_arm_control:
 
