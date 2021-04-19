@@ -1,0 +1,36 @@
+<launch>
+
+  <arg name="prefix" default=""/>
+  <param name="prefix" value="$(arg prefix)"/>
+
+  <arg name="name" default=""/>
+  <param name="name" value="$(arg name)"/>
+
+  <arg name="robot_identifier" default="0" />
+  <param name="robot_id" value="$(arg robot_identifier)"/>
+
+  <arg name="robot_ip" default="192.168.1.3" />
+  <param name="robot_ip_address" value="$(arg robot_ip)" type="str"/>
+
+  <arg name="robot_sim_" default="true" />
+  <param name="robot_sim_" value="$(arg robot_sim_)" type="bool"/>
+
+  <param name="thread_sampling_time_nsec" value="2000000"/>
+  <!-- <param name="thread_sampling_freq_hz" value="300"/> -->
+
+  <param name="robot_description" textfile="$(find denso_arm_control)/urdf/vs050.urdf"/>
+  <rosparam file="$(find denso_arm_control)/config/robot_config.yaml" command="load"/>
+
+  <rosparam file="$(find denso_arm_control)/config/pos_control.yaml" command="load"/>
+
+  <node name="denso_arm_control" pkg="denso_arm_control" type="denso_arm_control_exec" output="screen" />
+  <node name="denso_arm_gui" pkg="denso_arm_control" type="denso_arm_gui_exec" output="screen" />
+  <node name="denso_arm_planner" pkg="denso_arm_control" type="denso_arm_planner_exec" output="screen" />
+  <node name="denso_arm_example" pkg="denso_arm_control" type="denso_arm_example_exec" output="screen" />
+
+  <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" args="
+      $(arg name)/joint_state_controller
+      $(arg name)/position_controller
+    "/>
+
+</launch>

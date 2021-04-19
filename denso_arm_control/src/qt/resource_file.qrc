@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/button_down.png</file>
+        <file>images/button_left.png</file>
+        <file>images/button_right.png</file>
+        <file>images/button_up.png</file>
+        <file>images/open_close_symbol.jpg</file>
+        <file>images/rotation_symbol.png</file>
+        <file>images/icon_connect.png</file>
+        <file>images/icon_onff.png</file>
+        <file>images/icon_power.png</file>
+        <file>images/rec_button.png</file>
+    </qresource>
+</RCC>

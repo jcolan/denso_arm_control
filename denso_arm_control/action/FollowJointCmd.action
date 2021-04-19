@@ -1,0 +1,8 @@
+# goal
+sensor_msgs/JointState joint_pos
+---
+# result
+bool result
+---
+# feedback
+sensor_msgs/JointState joint_step

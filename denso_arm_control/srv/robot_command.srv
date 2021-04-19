@@ -1,0 +1,6 @@
+string message
+float64 doublevalue
+geometry_msgs/Point point
+geometry_msgs/Pose pose
+---
+bool succeeded
