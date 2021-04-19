@@ -29,7 +29,7 @@ This package includes the following nodes:
 
 * denso_arm_example: contains a ROS Action client to generate sample commands for the **/FollowJoint** action server and the **/FollowTool** action server. Use it as a base to create your own robot controller.
 
-![alt text](https://github.com/jcolan/denso_arm_control/doc/figures/rqt_graph.png "ROS nodes")
+![alt text](https://github.com/jcolan/denso_arm_control/blob/main/denso_arm_control/doc/figures/rqt_graph.png "ROS nodes")
 
 ## Launch file
 The launch file located in **/launch/denso_arm_contro.launch** allows to enable and dsiable the execution of the ROS nodes. It also allows configuration of the follwoing parameters:
@@ -50,7 +50,7 @@ A URDF file for the Denso VS050 robot is located in **/urdf/vs050.urdf**. The UR
 ## GUI
 This package includes a GUI developed with QT (soure code located in **/src/qt/**).
 
-![alt text](https://github.com/jcolan/denso_arm_control/doc/figures/gui.png "GUI")
+![alt text](https://github.com/jcolan/denso_arm_control/blob/main/denso_arm_control/doc/figures/gui.png "GUI")
 
 * Sequence for activation is:
     1. Connect: Establish a connection with the robot. 
@@ -66,7 +66,7 @@ The node denso_arm_planner allows you to modify the maximum join velocity and ma
 ```
 rosrun rqt_reconfigure rqt_reconfigure
 ```
-![alt text](https://github.com/jcolan/denso_arm_control/doc/figures/simulation.png "CoppeliaSim simulation")
+![alt text](https://github.com/jcolan/denso_arm_control/blob/main/denso_arm_control/doc/figures/simulation.png "CoppeliaSim simulation")
 
 The slider varies from 1% to 100%.
 
@@ -77,7 +77,7 @@ The package includes a simulation environment of the VS050 implemented with [Cop
  ./sim/vs050.ttt
 ```
 
-![alt text](https://github.com/jcolan/denso_arm_control/doc/figures/rqt_reconfigure.png "Dynamic reconfigure")
+![alt text](https://github.com/jcolan/denso_arm_control/blob/main/denso_arm_control/doc/figures/rqt_reconfigure.png "Dynamic reconfigure")
 
 The simulation model contains the the following ROS topics for communication with denso_arm_control:
 
